@@ -1,3 +1,4 @@
+<!--Josephine Nyoike and Ann Mudanye-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <title>Smith Housing Searching</title>
+    <style>
+		body {
+			background-color: powderblue;
+		}
+		h1   {
+			color: blue;
+				font-family: verdana;
+				font-size: 200%;}
+		p    {
+			color: black;
+			font-family: courier;
+			font-size: 100%;
+			}
+		img {
+			display:block;
+			margin-left: auto;
+			margin-right: auto;
+    		border-radius: 4px;
+    		border: 1px solid black;
+    		padding:5px;
+			}
+	</style>
   </head>
 
   <body style="background-color: powderblue">
@@ -12,19 +35,33 @@
       <h1>Smith Houses</h1>
     </header>
     <div>
+    	<!--Create a form with the dropdown and the search bar-->
         <form>
           <div>
+          	<!--create the dropdown-->
             <label for="category">Choose an option:</label>
             <select id="category">
               <option selected>All</option>
-              <option>Area of Campus</option>
-              <option>Accessibility</option>
-              <option>Year Built</option>
+              <option>Center Campus</option>
+              <option>East Quad</option>
+              <option>Green Street</option>
+              <option>Lower Elm Street</option>
+              <option>Upper Elm Street</option>
+			  <option>West Quad</option>
+              
+
+              
+              
             </select>
+           
+            
+
           </div>
+          
           <div>
-            <label for="searchTerm">Enter search term:</label>
-            <input type="text" id="searchTerm" placeholder="e.g. area">
+          	<!--create the search bar-->
+            <label for="searchTerm">Enter house name:</label>
+            <input type="text" id="searchTerm" placeholder="e.g. Cutter">
           </div>
           <div>
             <button>Filter</button>
@@ -34,6 +71,10 @@
 
       </main>
     </div>
-    <script src="houses.js"></script>
+    <!--link the .js file-->
+    <script src="Area.js"></script>
+    
+
+    
   </body>
 </html>
